@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Mantiene recursos y enlaces relativos al repo incluso en errores anidados.
+(() => {
+  const configuredPath = "/PasteleriaNelly/";
+  const pathname = location.pathname;
+  const root = pathname.startsWith(configuredPath) ? configuredPath : '/';
+  const depth = Math.max(0, pathname.slice(root.length).split('/').length - 1);
+  const element = document.createElement('base');
+  element.setAttribute('href', depth ? '../'.repeat(depth) : './');
+  document.head.appendChild(element);
+})();
+</script>
+<meta name="theme-color" content="#fffaf5">
+<title>Página no encontrada | Pastelería Nelly</title>
+<meta name="description" content="Vuelve al inicio para conocer las creaciones de Pastelería Nelly.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Pastelería Nelly">
+<meta property="og:title" content="Página no encontrada | Pastelería Nelly">
+<meta property="og:description" content="Vuelve al inicio para conocer las creaciones de Pastelería Nelly.">
+<meta property="og:image" content="https://abiudsm.github.io/PasteleriaNelly/assets/images/DRh2r6gEjq9.jpg">
+<meta property="og:image:alt" content="Pastel de corazón con detalles rojos de Pastelería Nelly">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://abiudsm.github.io/PasteleriaNelly/404.html">
+<meta property="og:url" content="https://abiudsm.github.io/PasteleriaNelly/404.html"><meta name="robots" content="noindex, follow">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/images/logo.jpg" type="image/jpeg">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html" aria-label="Pastelería Nelly, inicio"><img src="assets/images/logo.jpg" alt="" width="53" height="53"><span class="brand-name">Pastelería Nelly<small>Linares, Nuevo León</small></span></a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden><span>Menú</span><span aria-hidden="true">☰</span></button>
+<nav class="nav" id="navigation" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="posts.html">Creaciones</a><a href="about.html">Sobre Nelly</a><a class="nav-cta" href="https://www.instagram.com/pastelerianelly_linares/" target="_blank" rel="noopener noreferrer">Haz tu pedido <span aria-hidden="true">↗</span></a></nav></div></header>
+<main id="contenido"><section class="not-found"><span class="eyebrow">404 · Página no encontrada</span><h1>Por aquí no hay pastel,<br><em>pero sí un camino de vuelta.</em></h1><p>La página que buscas no está disponible. Vuelve al inicio para explorar nuestras creaciones.</p><a class="button" href="index.html">Volver al inicio <span aria-hidden="true">↗</span></a></section></main>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="index.html" aria-label="Pastelería Nelly, inicio"><img src="assets/images/logo.jpg" alt="" width="53" height="53"><span class="brand-name">Pastelería Nelly<small>Linares, Nuevo León</small></span></a><p class="footer-tag">Baked with love.</p></div><nav class="footer-links" aria-label="Enlaces del pie"><a href="posts.html">Todas las creaciones</a><a href="https://www.instagram.com/pastelerianelly_linares/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/profile.php?id=100052178664824" target="_blank" rel="noopener noreferrer">Facebook ↗</a></nav></div><div class="footer-bottom"><span>Pastelería Nelly · Linares, Nuevo León</span><span>Pasteles personalizados · Postres variados · Pedidos por DM</span></div></div></footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abiudsm.github.io/PasteleriaNelly/sitemap.xml
